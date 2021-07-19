@@ -133,6 +133,9 @@ static void Upgrade_StartFlag(void*rx,uint16 dataItemLen){
 		case ChkFrameStartFlag:
 			flag = ChkFrameStartFlag;
 			if(FLASHInter_Erase(ApplicationBackup_ADDRESS,ApplicationBackup_EndADDRESS)){
+				/*20210719--兼容性处理--清标志位*/
+				FLASH_ClearFlag(FLASH_FLAG_EOP | FLASH_FLAG_OPERR | FLASH_FLAG_WRPERR |
+					FLASH_FLAG_PGAERR | FLASH_FLAG_PGPERR | FLASH_FLAG_PGSERR);				
 				/*数据帧Frame Id异常后,接收重新开始数据帧,重新接收数据*/
 				UpgradePro_ParaInit();
 				/*接收bin文件数据帧*/
