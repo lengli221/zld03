@@ -19,7 +19,7 @@ Gitee 是 OSCHINA 推出的基于 Git 的代码托管平台（同时支持 SVN�
 
 20210719--备注
 功能:
-1.  美团12A bootloader 同App切换232和485接口--》默认采用485接口
+1.  美团6A bootloader 同App切换232和485接口--》默认采用485接口
 存在问题:
 1. bootloader与App层协议不兼容
 
