@@ -1,0 +1,6 @@
+---- get_Interface Matches (5 in 4 files) ----
+Chenfu.htm (c:\users\administrator\desktop\01.pro_1225 _6a\00.prj\01.output):<P><STRONG><a name="[af]"></a>get_Interface</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, interface_sw.o(.text))
+Chenfu.htm (c:\users\administrator\desktop\01.pro_1225 _6a\00.prj\01.output):<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_Interface
+interface_SW.c (c:\users\administrator\desktop\01.pro_1225 _6a\01.app):SaveIF_Label get_Interface(void){
+interface_SW.h (c:\users\administrator\desktop\01.pro_1225 _6a\01.app):SaveIF_Label get_Interface(void);
+Upgrade_pro.c (c:\users\administrator\desktop\01.pro_1225 _6a\04.pro\00.zld):	interface_Label  = get_Interface().label;
